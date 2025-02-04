@@ -1,0 +1,21 @@
+doctype html
+html
+    head
+        title= title
+    body
+        h1 Custom Objects
+        a(href="/update-cobj") Add to this table
+        table(border="1")
+            thead
+                tr
+                    th Property 1
+                    th Property 2
+                    th Property 3
+                    th Property 4
+            tbody
+                each obj in objects
+                    tr
+                        td= obj.properties.name
+                        td= obj.properties.breed
+                        td= obj.properties.food
+                        td= obj.properties.owner

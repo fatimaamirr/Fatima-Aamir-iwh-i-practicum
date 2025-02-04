@@ -1,0 +1,22 @@
+doctype html
+html
+    head
+        title= title
+    body
+        h1 Update Custom Object Form
+        form(action="/update-cobj" method="POST")
+            label(for="name") Name
+            input(type="text" name="name" required)
+            br
+            label(for="breed") Breed
+            input(type="text" name="breed" required)
+            br
+            label(for="food") Favorite Food
+            input(type="text" name="food" required)
+            br
+            label(for="owner") Owner
+            input(type="text" name="owner" required)
+            br
+            button(type="submit") Submit
+        br
+        a(href="/") Return to the homepage
